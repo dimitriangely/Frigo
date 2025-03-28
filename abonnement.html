@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Abonnement – Frigo</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .pricing-table {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .plan {
+      border-radius: 10px;
+      padding: 20px;
+      background: white;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      text-align: center;
+      border: 3px solid transparent;
+      transition: 0.3s;
+    }
+
+    .plan:hover {
+      transform: scale(1.03);
+      border-color: #4caf50;
+    }
+
+    .plan h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 1.4rem;
+      color: #2e7d32;
+      font-weight: bold;
+    }
+
+    .features {
+      text-align: left;
+      margin-top: 15px;
+    }
+
+    .features li {
+      margin-bottom: 10px;
+    }
+
+    .btn-subscribe {
+      margin-top: 20px;
+      padding: 12px 20px;
+      background-color: #66bb6a;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .btn-subscribe:hover {
+      background-color: #43a047;
+    }
+
+    .navbar {
+      background-color: #2e7d32;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 20px;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin-left: 15px;
+      font-weight: bold;
+    }
+
+    .navbar a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <div><strong>🥕 Frigo</strong></div>
+    <div>
+      <a href="https://ibragassg1.wixsite.com/saveeat" target="_blank">Accueil</a>
+      <a href="abonnement.html">Abonnements</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+
+  <h1 style="text-align: center;">📦 Choisis ton plan Frigo</h1>
+  <p class="slogan" style="text-align:center;">Des fonctionnalités adaptées à tes besoins, zéro gaspillage garanti.</p>
+
+  <div class="pricing-table">
+
+    <!-- Plan gratuit -->
+    <div class="plan">
+      <h3>🥦 Frigo Light</h3>
+      <p class="price">0 €/mois</p>
+      <ul class="features">
+        <li>✅ 2 recettes/semaine</li>
+        <li>✅ Suggestions simples</li>
+        <li>🔁 Avec pub</li>
+      </ul>
+      <button class="btn-subscribe">C'est parti</button>
+    </div>
+
+    <!-- Plan Premium -->
+    <div class="plan">
+      <h3>🥑 Frigo+</h3>
+      <p class="price">4,99 €/mois</p>
+      <ul class="features">
+        <li>✅ Suggestions illimitées</li>
+        <li>✅ Frigo virtuel</li>
+        <li>✅ Statistiques personnalisées</li>
+        <li>🚫 Sans pub</li>
+      </ul>
+      <button class="btn-subscribe">S’abonner</button>
+    </div>
+
+    <!-- Plan Entreprise -->
+    <div class="plan">
+      <h3>🏢 Frigo Pro</h3>
+      <p class="price">Sur devis</p>
+      <ul class="features">
+        <li>👥 Multi-utilisateurs</li>
+        <li>📊 Tableau de bord</li>
+        <li>🔌 API & support dédié</li>
+        <li>📈 Rapport d’impact</li>
+      </ul>
+      <button class="btn-subscribe">Nous contacter</button>
+    </div>
+
+  </div>
+
+</body>
+</html>
