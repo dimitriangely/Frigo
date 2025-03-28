@@ -3,69 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <title>Frigo</title>
+  <link rel="stylesheet" href="style.css">
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      padding: 20px;
-      max-width: 700px;
-      margin: auto;
-      background-color: #f0fdf4;
-    }
-    h1 {
-      font-size: 2.8em;
-      color: #2e7d32;
-      margin-bottom: 0;
-    }
-    .slogan {
-      font-size: 1.2em;
-      color: #388e3c;
-      font-weight: bold;
-      margin-top: 5px;
-    }
-    .accroche {
-      font-size: 1.1em;
-      margin: 10px 0 30px;
-      color: #4caf50;
-      font-style: italic;
-    }
-    select, input, button {
-      margin: 10px 0;
-      padding: 10px;
-      width: 100%;
-      font-size: 1em;
-      border-radius: 6px;
-      border: 1px solid #c8e6c9;
-    }
-    button {
-      background-color: #66bb6a;
+    /* Barre de navigation */
+    .navbar {
+      background-color: #2e7d32;
       color: white;
-      cursor: pointer;
-      border: none;
-      transition: background 0.3s ease;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
-    button:hover {
-      background-color: #4caf50;
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin-left: 15px;
+      font-weight: bold;
     }
-    ul {
-      list-style: none;
-      padding-left: 0;
+
+    .navbar a:hover {
+      text-decoration: underline;
     }
-    li {
-      margin: 5px 0;
-    }
-    .missing {
-      color: red;
-    }
-    .section {
-      background: white;
-      padding: 15px;
-      margin-top: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+
+    /* Pied de page */
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      color: #777;
+      font-size: 0.9rem;
+      border-top: 1px solid #ccc;
+      padding-top: 20px;
     }
   </style>
 </head>
 <body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div><strong>🥕 Frigo</strong></div>
+    <div>
+      <a href="https://ibragassg1.wixsite.com/saveeat" target="_blank" rel="noopener">Accueil</a>
+      <a href="abonnement.html">Abonnements</a>
+    </div>
+  </div>
 
   <h1>🥕 Frigo</h1>
   <p class="slogan">Cuisiner smart, zéro gaspi.</p>
@@ -102,6 +85,12 @@
     <h2>5. Suggestions avec les restes</h2>
     <p id="suggestionText"></p>
   </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Frigo. Fait avec ❤️ pour lutter contre le gaspillage alimentaire.</p>
+    <p>Contact : contact@frigo-app.com</p>
+  </footer>
 
   <script>
     const recipes = {
